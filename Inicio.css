@@ -1,0 +1,225 @@
+body{
+}
+
+.Mdesplegable{
+    margin-top: -8px;
+    border: 5px solid silver;
+    width: 99.45%;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-pantalla-capas-papel-oscuro-detalles-dorados_23-2148403401.jpg?size=626&ext=jpg);
+}
+
+.Mdesplegable nav ul a #perfilHome{
+    margin-bottom: -30px;
+    margin-top: -8px;
+    margin-left: -20px;
+    border: 2px solid purple;
+    border-radius: 4px 4px 4px 4px;
+    position: absolute;
+    transition: margin-top 0.5s;
+    animation-name: shake;
+    animation-duration: 2s;
+    animation-delay: 0.0s;
+    animation-iteration-count: infinite;   
+}
+
+@-webkit-keyframes shake{
+    25%{transform: rotate(10deg);}
+    75%{transform: rotate(-10deg);}
+}
+
+.Mdesplegable nav ul a #perfilHome:hover {
+    margin-top: -14px;
+}
+
+.Mdesplegable nav ul li a{
+    text-decoration: none;
+    color:darkgoldenrod;
+    margin-left: 40px;;
+}
+
+.Mdesplegable nav ul li:hover a{
+    color: black;
+    background-color: white;
+}
+
+.Mdesplegable nav p {
+    display: inline-block;
+    margin-top: -10px;
+    margin-left: 20px;
+    position: absolute;
+}
+
+.Mdesplegable nav ul #userLog{
+    width: 120px; 
+    height: 60px;
+    background-color: black; 
+    border-radius: 10px 20px 20px 10px;
+    padding-left: 5px;
+    border: 1px solid darkred;
+    margin-left: 600px;
+}
+.Mdesplegable nav ul #userLog #userpng{
+  padding-top: 5px;
+  margin-bottom: -7px;
+}
+
+.Mdesplegable nav ul .discord{
+    margin-left: 400px;
+    margin-top: -14px;
+    margin-bottom: -30px;
+    transition: height 0.5s;
+    position: absolute;
+}
+
+.Mdesplegable nav ul a .discord:hover{
+    height: 84px;
+}
+
+.Mdesplegable nav ul .facebook{
+    margin-left: 500px;
+    margin-top: -14px;
+    margin-bottom: -30px;
+    position: absolute;
+    transition: height 0.5s;
+}
+.Mdesplegable nav ul a .facebook:hover{
+    height: 84px;
+    
+}
+
+.Mdesplegable nav ul li{
+  display: inline-block;
+  margin-left: 40px;
+  font-size: 40px;
+} 
+
+.Mdesplegable nav ul p span{
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: -100px;
+    background-image: url(https://media.istockphoto.com/photos/black-wood-texture-backgroundblack-plywood-floor-texture-picture-id882088764?k=6&m=882088764&s=170667a&w=0&h=4zWHmZ0wZtLfJhkSRFr9guGvmgFHuyZlXMUSaIhM7v8=);
+    height: 250px;
+    width: 225px;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+    display: none;
+    position: absolute;
+    border: 2px solid silver;
+}
+
+.Mdesplegable nav ul p span .texto{
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+}
+
+.Mdesplegable nav ul p span .boton{
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.Mdesplegable nav ul p:hover span{
+    display: block;
+}
+
+#elInicio{
+   margin-top: -25px;
+    display: none;  
+    overflow: hidden;
+}
+
+#elInicio:target{
+    display: block;
+       
+}
+
+.lenguajes{
+  border: 4px solid gold;
+  width: 400px;
+  height: 282px;
+  padding-top: -20px;
+}
+
+#animes {
+    padding-top: 10px;
+    display: none;
+    height: 2000px; 
+    width: 99.9%;
+background-image:url(https://media.istockphoto.com/photos/black-wood-texture-backgroundblack-plywood-floor-texture-picture-id882088764?k=6&m=882088764&s=170667a&w=0&h=4zWHmZ0wZtLfJhkSRFr9guGvmgFHuyZlXMUSaIhM7v8=);
+}
+
+
+
+#animes:target{
+    display: block;
+}
+
+#animes .titulosec #sec1{
+    padding-left: 50px;
+    background-color: darkslategray;
+    margin-top: -10px;
+    height: 60px;
+    padding-top: 10px;
+}
+
+#animes ul li img{
+    margin-left: 40px;
+    margin-bottom: 12px;
+    position: relative;
+  height:270px;
+  width: 190px;
+  display: inline-block;
+  padding-left: 6px;
+  padding-top: 6px;
+  padding-right: 6px;
+  padding-bottom: 6px;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 10px 10px 10px 10px black;
+}
+
+
+#animes ul{
+    margin-top: -80px;
+    margin-left: -46px ;
+}
+
+#animes ul li{
+    display: inline-block;
+    margin-top: 70px;
+}
+
+
+#animes ul li a{
+    position: absolute;
+    margin-left: -195px;
+    margin-top: 285px;
+        color: white;
+        text-decoration: none;  
+        text-align: center;
+        width: 190px; 
+        font-style: bold;
+        font-size: 18px;  
+}
+
+#animes ul li img:hover{
+    background-color: black;
+}
+
+#animes ul li a:hover{
+    border-radius: 3px 3px 3px 3px;
+    color: blueviolet;
+}
+
+.animacion img{
+  position: absolute;
+}
+
+.animacion #f1{
+  display: none;
+}

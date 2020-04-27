@@ -19,7 +19,7 @@ body{
     animation-name: shake;
     animation-duration: 2s;
     animation-delay: 0.0s;
-    animation-iteration-count: infinite;   
+    animation-iteration-count: infinite;  
 }
 
 @-webkit-keyframes shake{
@@ -216,10 +216,22 @@ background-image:url(https://media.istockphoto.com/photos/black-wood-texture-bac
     color: blueviolet;
 }
 
-.animacion img{
+#juegos #f1{
   position: absolute;
 }
 
-.animacion #f1{
+#juegos{
   display: none;
+}
+
+
+#juegos:target{
+    display: block;
+}
+
+#cuadrito{
+    margin-top: 150px;
+    background-color: blue;
+    height: 50px;
+    width: 50px;
 }

@@ -1,13 +1,52 @@
-var move = document.getElementById("f1");
 
+var player = document.getElementById("cuadrito");
+var stm = document.getElementById("estamina")
+var stmValue = 120;
+var stmLess =0;
+var stmPlus = 10;
 var velocidad = 15;
-var mLeft = 0;
-var mTop = 0;
+var mLeft = 20;
+var mTop = 150;
 var sec = 0;
+var tiempo = 0;
 
-var frames=["https://tse2.mm.bing.net/th?id=OIP.0NCULXDynTNMrFBPvAFAigHaHa","https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQUj6CD5-pRbBE4TwwpCsCvrnZlQkt4bLvfoyGUeUAVnsXtRtwF&usqp=CAU"]
 
-function movimientoD(){
+window.onload = document.onkeydown = function code(llave){
+    var thecode= llave.keyCode
+    console.log(thecode);
+}
+
+document.addEventListener("keydown", function move(tecla){
+    var code = tecla.keyCode;
+    if(code == "68" /*D*/){
+        mLeft +=velocidad;
+        player.style.marginLeft = mLeft + "px";
+    }
+    if(code == "65" /*A*/){
+        mLeft -=velocidad;
+        player.style.marginLeft = mLeft + "px";
+    }
+    if(code == "83" /*S*/){
+        mTop +=velocidad;
+        player.style.marginTop = mTop + "px";
+    }
+    if(code == "87" /*W*/){
+        mTop -=velocidad;
+        player.style.marginTop = mTop + "px";
+    }
+    if(code == "16"  /*Shift*/){
+        stmLess = 5;
+        stmValue -= stmLess
+        stm.style.width= stmValue +"px";
+        stm.style.marginRight = stmLess + "px";}
+        
+})
+
+function moveENE(){
+
+}
+
+/*function movimientoD(){
     sec++;
     if(sec==2){
         sec=0;
@@ -40,7 +79,7 @@ document.addEventListener("keydown",function(mov){
     if(mov.keyCode == "38"){movimientoW();}
 })
 
-/* Otra forma de hacer lo mismo*/
+/* Otra forma de hacer lo mismo
 
 var cuadro = document.getElementById("cuadrito");
 
@@ -71,4 +110,4 @@ function teclas(event){
                 y-=vel;
                 cuadro.style.marginTop = y+"px";
             }
-}
+}*/

@@ -216,11 +216,12 @@ background-image:url(https://media.istockphoto.com/photos/black-wood-texture-bac
     color: blueviolet;
 }
 
-#juegos #f1{
-  position: absolute;
-}
-
 #juegos{
+    margin-top: 20px;
+    border: 5px white solid;
+    overflow: hidden;
+    height: 600px;
+    width: 1400px;
   display: none;
 }
 
@@ -229,9 +230,89 @@ background-image:url(https://media.istockphoto.com/photos/black-wood-texture-bac
     display: block;
 }
 
-#cuadrito{
+#juegos #cuadrito{
+    position: absolute;
     margin-top: 150px;
     background-color: blue;
     height: 50px;
     width: 50px;
+    margin-left: 20px;
+    transition: all 1ms;
+    z-index: -1;
+}
+
+#juegos #enemigo1{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+
+#juegos #contenedorVD{
+    margin-top: 390px;
+    margin-left: 10px;
+    position:absolute;
+    height: 200px;
+    width: 12px;
+    background-color: black;
+    border: 2px white solid;
+    border-radius: 0px 20px 0px 0px;
+}
+
+#juegos #vida{
+    background-color: green;
+    height: 200px;  
+    /*margin-top: 50px;*/
+    width: 12px;
+    border-radius: 0px 20px 0px 0px;
+
+}
+
+#juegos #especial {
+    margin-top: 540px;
+    margin-left: 40px;
+}
+
+#juegos #especial #especial1{
+    background-color: orange;
+    width: 30px;
+    height: 15px;
+    border: 2px white solid;
+}
+
+#juegos #especial #especial2{
+    background-color: orange;
+    width: 30px;
+    height: 15px;
+    border: 2px white solid;
+    margin-top: -18px;
+    margin-left: 40px;
+}
+
+#juegos #especial #especial3{
+    background-color: orange;
+    width: 30px;
+    height: 15px;
+    border: 2px white solid;
+    margin-top: -19px;
+    margin-left: 80px;
+}
+
+#juegos #contenedorST{
+    height: 15px;
+    width: 120px;
+    background-color: black;
+    margin-top: 15px;
+    margin-left: 40px;
+    border: 2px white solid;
+    border-radius: 0px 0px 14px 0px;
+}
+
+#juegos #estamina{
+    height: 15px;
+    width: 120px;
+    background-color: yellow;
+    border-radius: 0px 0px 12px 0px;
+    /*margin-left: -50;*/
+    transition: all 0.2s;
 }
